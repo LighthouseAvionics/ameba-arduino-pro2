@@ -347,7 +347,7 @@ int get_available(int sock)
     } while (client_fd < 0);
 
     if (client_fd < 0) {
-        printf("\r\n[ERROR] %s Accept connection failed\n", __FUNCTION__);
+        // printf("\r\n[ERROR] %s Accept connection failed\n", __FUNCTION__);
         return -1;
     } else {
         timeout = 3000;
